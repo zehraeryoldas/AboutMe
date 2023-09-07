@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="yellow_star">Yellow</string>
+    <string name="name">Zehra Eryoldas</string>
+    <string name="yellow_starr">pink</string>
+    <string name="bio">Lorem Ipsum is simply dummy text of the
+        \n\nprinting and typesetting industry.
+        \n Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s,
+        \n when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+        \nIt has survived not only five centuries, but also the leap into electronic typesetting,
+        \nremaining essentially unchanged. It was popularised in the 1960s with the release of Letraset
+        \nsheets containing Lorem Ipsum passages, and more recently with desktop publishing
+        \nsoftware like Aldus PageMaker including versions of Lorem Ipsum.</string>
+    <string name="what_is_your_nickname">What is your nickname</string>
+    <string name="done">Done\n</string>
+</resources>
