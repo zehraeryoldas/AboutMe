@@ -14,12 +14,18 @@ import com.exapmle.aboutme.databinding.ActivityMainBinding
 class MainActivity : AppCompatActivity() {
     //Öncelikle bindingi aktifleştirdik
     //bu sayfaya full binding üzerinden erişim sağladık
+    //findviewByid kullanmayacağız
     private lateinit var binding: ActivityMainBinding
+    private val myName:MyName=MyName(name = "Zehra ery")
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
        // setContentView(R.layout.activity_main)
         binding=DataBindingUtil.setContentView(this,R.layout.activity_main)
+
+        binding.myName=myName
+
        // findViewById<Button>(R.id.done_button).setOnClickListener {
          //   addNickname(it)
         //}
@@ -40,7 +46,8 @@ class MainActivity : AppCompatActivity() {
         //öncelikle kodun okunurluğunu daha da kolaylaştırmak için kotlinin bu eklentisini kullanacağız
         binding.apply {
           //  tüm bağlama ifadelerini geçersiz kılmamız ve böylece bunların doğru verilerle yeniden oluşturulmasını sağlamamız gerekir. invalidateAll()
-            nicknameText.text=binding.nicknameEdit.text
+           // nicknameText.text=binding.nicknameEdit.text
+            myName?.nickname=nicknameEdit.text.toString()
             invalidateAll()
 //veri girildiğinde alt da tekrar yazılmasını gizle
             nicknameEdit.visibility=View.GONE
